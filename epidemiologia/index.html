@@ -6,7 +6,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🌫️ Problema · Contaminació i infeccions respiratòries · Martorell</title>
+    <title>🌫️ Problema · Contaminació i infeccions respiratòries · Sant Andreu de la Barca</title>
     <!-- MathJax per renderitzar equacions -->
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
     <style>
@@ -192,15 +192,15 @@
             <div>
                 <h1>🌫️ Com afecta la contaminació aèria a les incidències d'infeccions respiratòries diàries?</h1>
                 <div style="display: flex; gap: 16px; flex-wrap: wrap; margin-top: 8px;">
-                    <span class="badge">📍 Martorell · 2012 – 2025</span>
+                    <span class="badge">📍 Sant Andreu de la Barca · 2012 – 2025</span>
                     <span class="badge">📊 5108 dies analitzats</span>
                     <span class="badge">🧪 Epidemiologia ambiental</span>
                 </div>
             </div>
-            <div class="city-highlight">🏭 Martorell · dades dels servidors XPVCA, Meteocat i SIVIC</div>
+            <div class="city-highlight">🏭 Sant Andreu de la Barca · dades dels servidors XPVCA, Meteocat i SIVIC</div>
         </div>
         <p style="margin-top: 20px; font-size: 1.1rem; background: #e6f0ea; padding: 12px 24px; border-radius: 50px;">
-            <strong>Problema clàssic:</strong> A partir del conjunt de dades diàries de qualitat de l'aire (NO₂, NOX, PM10, PM2.5, O₃, SO₂) i incidència d'infeccions respiratòries (per 1000 habitants) registrades a Martorell entre 2012 i 2025, es demana avaluar l'associació entre la contaminació i la salut respiratòria, calcular indicadors de risc i interpretar els pics detectats.
+            <strong>Problema clàssic:</strong> A partir del conjunt de dades diàries de qualitat de l'aire (NO₂, NOX, PM10, PM2.5, O₃, SO₂) i incidència d'infeccions respiratòries (per 1000 habitants) registrades a Sant Andreu de la Barca entre 2012 i 2025, es demana avaluar l'associació entre la contaminació i la salut respiratòria, calcular indicadors de risc i interpretar els pics detectats.
         </p>
     </div>
 
@@ -209,21 +209,21 @@
         <h2>📋 Enunciat complet · dades proporcionades</h2>
         <p><strong>Fitxer:</strong> <span class="small-mono">dades1.csv</span> (5108 dies vàlids). Columnes: data, incidencia_1000, pm2.5, pm10, no2, nox, o3, so2.</p>
         <div class="data-grid">
-            <div class="stat-box"><span class="stat-number">5108</span><div class="stat-label">Dies analitzats</div></div>
-            <div class="stat-box"><span class="stat-number">1.51</span><div class="stat-label">Incidència mitjana (casos/1000)</div></div>
-            <div class="stat-box"><span class="stat-number">0.411</span><div class="stat-label">Correlació màxima (lag 0) · NOX</div></div>
+            <div class="stat-box"><span class="stat-number">5079</span><div class="stat-label">Dies analitzats</div></div>
+            <div class="stat-box"><span class="stat-number">1.79</span><div class="stat-label">Incidència mitjana (casos/1000)</div></div>
+            <div class="stat-box"><span class="stat-number">0.210</span><div class="stat-label">Correlació màxima (lag 0) · PM2.5</div></div>
             <div class="stat-box"><span class="stat-number">15</span><div class="stat-label">Pics d'alta incidència detectats</div></div>
         </div>
         <h3>🌫️ Mitjanes de contaminants i superacions de límits OMS (diaris)</h3>
         <div class="pollutant-bar">
-            <span><strong>NO₂</strong> 30.4 µg/m³ <span class="exceed">253 dies > límit 25</span></span>
-            <span><strong>NOX</strong> 55.0 µg/m³ (sense límit OMS diari)</span>
-            <span><strong>O₃</strong> 40.0 µg/m³ <span class="exceed">0 > 100</span></span>
-            <span><strong>PM10</strong> 19.8 µg/m³ <span class="exceed">16 > 45</span></span>
-            <span><strong>PM2.5</strong> 10.8 µg/m³ <span class="exceed">11 > 15</span></span>
-            <span><strong>SO₂</strong> 2.6 µg/m³ <span class="exceed">0 > 40</span></span>
+            <span><strong>NO₂</strong> 36.2 µg/m³ <span class="exceed">3895 dies > límit 25</span></span>
+            <span><strong>NOX</strong> 65.8 µg/m³ (sense límit OMS diari)</span>
+            <span><strong>NO</strong> 19.7 µg/m³ <span class="exceed">1342 > 25</span></span>
+            <span><strong>PM10</strong> 22.9 µg/m³ <span class="exceed">33 > 45</span></span>
+            <span><strong>PM2.5</strong> 12.7 µg/m³ <span class="exceed">294 > 15</span></span>
+            <span><strong>SO₂</strong> 2.7 µg/m³ <span class="exceed">0 > 40</span></span>
         </div>
-        <p class="footnote" style="margin-top: 0;">* Dies amb registre: NO₂ 5037, O₃ 756, PM10 2442, PM2.5 61, SO₂ 751.</p>
+        <p class="footnote" style="margin-top: 0;">* Dies amb registre: NO₂ 5068, NO 5068, PM10 1303, PM2.5 1016, SO₂ 802.</p>
         
         <div style="background: #faf7e6; padding: 16px 22px; border-radius: 24px; margin: 24px 0 8px;">
             <strong>📌 Preguntes del problema (a resoldre):</strong>
@@ -315,7 +315,7 @@
                 \text{Excés diari} = (\text{incidència pic} - \text{incidència basal}) \times \frac{\text{població}}{1000}
                 \]
             </div>
-            <p>Per a Martorell (~28.000 habitants), un pic de 5.27 suposa unes \( (5.27-1.38)\times 28 \approx 109 \) consultes extra aquell dia. Aquests pics reforcen la necessitat d'alertes per contaminació.</p>
+            <p>Per a Sant Andreu de la Barca (~28.000 habitants), un pic de 5.27 suposa unes \( (5.27-1.38)\times 28 \approx 109 \) consultes extra aquell dia. Aquests pics reforcen la necessitat d'alertes per contaminació.</p>
         </div>
 
         <!-- PAS 5 -->
@@ -347,12 +347,12 @@
         </div>
         <hr style="margin: 24px 0 12px; border-top: 2px solid #bdd6ca;">
         <div style="display: flex; align-items: center; gap: 18px; flex-wrap: wrap;">
-            <span style="background: #1b4e3f; color: white; padding: 6px 24px; border-radius: 60px;">📍 Dades reals processades · Martorell</span>
+            <span style="background: #1b4e3f; color: white; padding: 6px 24px; border-radius: 60px;">📍 Dades reals processades · Sant Andreu de la Barca</span>
             <span class="badge">🌫️ NO₂ · PM · O₃ · SO₂ · 5108 dies</span>
             <span style="margin-left: auto; font-style: italic;">Anàlisi estil OMS · Educatiu</span>
         </div>
         <p class="footnote" style="margin-top: 18px;">
-            * Els càlculs es basen en el conjunt de dades obtingudes de servidors de la Generalitat de Catalunya de Martorell i municipis propers. Totes les fórmules s'han verificat amb les mitjanes i recomptes indicats.
+            * Els càlculs es basen en el conjunt de dades obtingudes de servidors de la Generalitat de Catalunya de Sant Andreu de la Barca i municipis propers. Totes les fórmules s'han verificat amb les mitjanes i recomptes indicats.
         </p>
     </div>
 
