@@ -270,14 +270,17 @@
 
         
 <h2>What is the origin of air pollution in Sant Andreu de la Barca</h2>
+<ul>
 <p>To know the origin of air pollution in Sant Andreu de la Barca is easy with RStudio.</p>
 <p>We only need data in columns named ws for wind speed, wd for wind direction and to choose a pollutant e.g.:
 PM<sub>10</sub>. These are conditions of the openair library in order to create a pollution rose 
 with the instruction <code>pollutionRose(cityall, pollutant="pm10")</code></p>
 <p>As you can see in the following image Sant Andreu de la Barca air pollution comes from some urbanitzacions near from that area or even from Can Coll or Santa Maria de l'Avall,
   that are some near cities from Sant Andreu.</p>
-<u><h3>pollutionRose/h3></u>
+</ul>
+<u><h3>pollutionRose</h3></u>
 <img src="pollutionRose.png"> 
+<ul>
 <p>The wind rose graphic shows the relationship between wind direction and PM₁₀ concentrations in Sant Andreu de la Barca. 
   On the right, we can see a line indicating the PM10 concentration in Sant Andreu de la Barca.
   The redder the line, the more pollution there is and the bluer or purpler it is, the less pollution there is.
@@ -285,50 +288,63 @@ with the instruction <code>pollutionRose(cityall, pollutant="pm10")</code></p>
   In contrast, winds from the north and east are less frequent and there is less pollution.
   This suggests that air masses arriving from the southwest transport more pollution into the area, possibly due to traffic, industrial activity, or nearby urban zones.
   In the next photo, we will see where is Sant Andreu de la Barca in Google Maps.</p>
+</ul>
 <u><h3>Google Maps</h3></u>
 <img src="googlemaps.png">
+<ul>
 <p>This is a screenshot from where is Sant Andreu de la Barca and, unfortunately in this image we can't see where are the urbanitzacions,
 but the urbanitzacions are through the southeast.
 This agrees with the pollutionRose graph we saw earlier.</p>
+</ul>
 <u><h3>polarPlot</h3></u>
 <img src="polarplot.png"> 
+<ul>
 <p>This polarPlot shows the relationship between PM₁₀ concentrations, wind direction, and wind speed in Sant Andreu de la Barca. 
 The warm colors (orange and red) represent higher PM₁₀ levels, while cooler colors (green and blue) indicate lower concentrations. 
 The graph suggests that the highest PM₁₀ concentrations occur mainly with winds coming from the east, southeast, and south directions at relatively low wind speeds. 
 In contrast, stronger winds from the west and northwest are associated with lower pollution levels, probably because they help disperse pollutants more effectively. 
-Overall, the graphic indicates that both wind direction and wind intensity influence the accumulation and transport of particulate pollution in the area. 
-</p>
-<p>You can see that the pollutionRose and polarPlot graphs are very similar, because both graphs study the relationship between the wind and PM₁₀ pollution of Sant Andreu, but they are not the same. 
+Overall, the graphic indicates that both wind direction and wind intensity influence the accumulation and transport of particulate pollution in the area.</p>
+</ul>
+<ul>
+  <p>You can see that the pollutionRose and polarPlot graphs are very similar, because both graphs study the relationship between the wind and PM₁₀ pollution of Sant Andreu, but they are not the same. 
   The pollutionRose only focuses on the frequency of PM₁₀ concentrations by wind direction, while the polarPlot goes a step further by combining wind direction, wind speed, and PM₁₀ concentration.</p>
+</ul>
 <u><h3>polarMap</h3></u>
 <img src="polarMap.png"> 
+<ul>
 <p> This map is a representation of the polarPlot in a map, showing how PM₁₀ pollution is distributed around the monitoring station in Sant Andreu de la Barca according to wind direction and intensity. 
 In this photo we can see that the pollution comes from the east, suggesting that some PM₁₀ pollution may be associated with nearby industrial areas, 
 such as CELSA Barcelona, as well as major road infrastructure located near the monitoring station.</p>
+</ul>
+<ul>
 <p>And from the polarMap image we've created a page where you can zoom in on the area and see different locations where the contamination might be coming from.
 Here's a screenshot from the page that we made:<img src="pagina_polarMap.png"></p>
-
+</ul>
+<ul>
 <p>The relationship between PM₁₀ pollution and respiratory health in Sant Andreu de la Barca was analyzed using Relative Risk (RR), Attributable Risk (AR), and Attributable Fraction (AR%).</p>
+</ul>
 <u><h3>Relative Risk (RR)</h3></u>
 <img src="relativerisk.png"> 
+<ul>
 <p>Relative Risk (RR) measures how much more likely a health problem is to occur in a group exposed to a pollutant compared to a group with lower exposure.
   In this study, the RR value for PM₁₀ is 1.08, which means that people exposed to higher PM₁₀ concentrations may have an 8% higher risk of respiratory problems.
   An RR greater than 1 suggests a possible increase in risk, while an RR lower than 1 would indicate a protective effect. 
   However, because the p-value is higher than 0.05, is not statistically significant.</p>
-
+</ul>
  <u><h3>Attributable Risk (AR)</h3></u>
  <img src="attributablerisk.png">
+<ul>
  <p>Attributable Risk (AR) represents the additional number of respiratory cases that could be associated with exposure to PM₁₀. 
    In this case, the AR value is 0.14 cases per 1000 people, meaning that a very small number of cases may be linked to PM₁₀ exposure.
    This indicator helps estimate the direct impact of the pollutant on public health.</p>
-
+</ul> 
   <u><h3>Attributable Fraction (AR%)</h3></u>
   <img src="attributablefraction.png">
+<ul>
   <p>Attributable Fraction (AR%) indicates the percentage of respiratory cases among the exposed population that could potentially be attributed to PM₁₀ exposure.
     Here, the AR% is 7.1%, suggesting that around 7% of the cases may be related to PM₁₀ pollution.
     However, as with RR and AR, the p-value shows that the evidence is not strong enough to confirm a statistically significant relationship.</p>
-
-  
+</ul>
 
       </ul>
   </main>
