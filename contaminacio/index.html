@@ -143,6 +143,7 @@
       Now, let's see the graphics that RStudio has given.
        <img src="captura_time_variation.png">
     <ul>
+    <u><h3>Time Variation</h3></u>
       <p> This is the first graphic, and is called 'Time Variation' </p>
     <p>This graphic shows how air pollutants vary in Sant Andreu de la Barca depending on the hour of the day, the month of the year, and the day of the weekend. 
       The pollutants analyzed are nitrogen oxide, nitrogen dioxide, nitrogen oxides, ozone, particulate matter of les than 10 &micro;g/m<sup>3</sup>,particulate matter of les than 2.5 &micro;g/m<sup>3</sup> and sulphur dioxide.
@@ -152,6 +153,7 @@
     </ul>
       <img src="captura_trend_level.png">
       <ul>
+      <u><h3>Trend Level</h3></u>
         <p> This is the second graphic, named 'Trend Level' </p>
       In the title, we can see that it says 'Nitrogen Dioxide evolution in Sant Andreu de la Barca', that means the evolution of nitrogen dioxide in the air in Sant Andreu de la Barca from the year 1991 to 2025.
       The graphic shows the months of the year, that each rectangular corresponds to one year and that the data starts from the 1998 to 2025.
@@ -164,6 +166,7 @@
       </p>
       <img src="captura_calendar_plot.png">
       <ul>
+      <u><h3>Calendar Plot</h3></u>
         <p> This is the third graphic, titled 'Calendar Plot'. </p>
         The title is 'PM<sub>10</sub> - Sant Andreu de la Barca (2025)'.
         The graphic shows all the days and months of 2025 in Sant Andreu de la Barca, and the differents colors shows the concentration of PM<sub>10</sub> in that day.
@@ -225,14 +228,14 @@
      <p>
    <ul>
     Now, we want to compare the meteorlogical data with Sivic.
-    <u> <h2>COVID-19</h2> </u>
+    <u> <h3>COVID-19</h3> </u>
      <img src="captura_covid_2022.png"> 
      Here is the graphic of COVID-19 from the Sivic of Sant Andreu de la Barca in the year 2022.
      The comparison between PM₁₀ data and the daily cases of respiratory infections from primary healthcare centers (SIVIC), in 2022 from COVID-19 shows that some episodes with higher particle concentrations of pollution coincide with small increases in the number of cases. 
      This may indicate that poorer air quality can affect respiratory health.
    </p>
    </ul>
-     <u><h2>STREPTOCOCCAL PHARYNGOTONSILLITIS</h2></u>
+     <u><h3>STREPTOCOCCAL PHARYNGOTONSILLITIS</h3></u>
      <img src="captura_faringo_estrep_2025.png">    
      This is the graphic of streptococcal pharyngotonsillitis, and then we have a photo of the meteorological in 2025 of Sant Andreu de la Barca.
      <img src="captura_meteo_2025.png"> 
@@ -245,7 +248,7 @@
      This may suggest that certain meteorological conditions could influence respiratory health, like air pollution.
     </p>
     </ul>
-    <u><h2>FLU</h2></u>
+    <u><h3>FLU</h3></u>
      <img src="captura_grip_2016.png"> 
     This is the stadistic of the flu in 2016.
     <img src="captura_meteo_2016.png"> 
@@ -256,7 +259,7 @@
     This suggests that winter meteorological conditions can facilitate the spread of the flu, although the main cause of the disease is the flu itself.
   </ul>
 </p>
-    <u><h3>CONCLUSION</h3></u>
+    <u><h2>CONCLUSION</h2></u>
       <ul>
         <p>
     Air pollution in Sant Andreu de la Barca shows daily and seasonal patterns, with higher levels during traffic hours and weekdays. 
@@ -273,6 +276,7 @@ PM<sub>10</sub>. These are conditions of the openair library in order to create 
 with the instruction <code>pollutionRose(cityall, pollutant="pm10")</code></p>
 <p>As you can see in the following image Sant Andreu de la Barca air pollution comes from some urbanitzacions near from that area or even from Can Coll or Santa Maria de l'Avall,
   that are some near cities from Sant Andreu.</p>
+<u><h3>pollutionRose/h3></u>
 <img src="pollutionRose.png"> 
 <p>The wind rose graphic shows the relationship between wind direction and PM₁₀ concentrations in Sant Andreu de la Barca. 
   On the right, we can see a line indicating the PM10 concentration in Sant Andreu de la Barca.
@@ -280,13 +284,15 @@ with the instruction <code>pollutionRose(cityall, pollutant="pm10")</code></p>
   The most frequent winds come from the southwest and south directions, and these winds are associated with higher PM₁₀ levels, mainly between 20 and 40 µg/m³. 
   In contrast, winds from the north and east are less frequent and there is less pollution.
   This suggests that air masses arriving from the southwest transport more pollution into the area, possibly due to traffic, industrial activity, or nearby urban zones.
-  In the next photo, we will see where is Sant Andreu de la Barca in google maps.</p>
+  In the next photo, we will see where is Sant Andreu de la Barca in Google Maps.</p>
+<u><h3>Google Maps</h3></u>
 <img src="googlemaps.png">
 <p>This is a screenshot from where is Sant Andreu de la Barca and, unfortunately in this image we can't see where are the urbanitzacions,
 but the urbanitzacions are through the southeast.
 This agrees with the pollutionRose graph we saw earlier.</p>
+<u><h3>polarPlot</h3></u>
 <img src="polarplot.png"> 
-<p>This polar plot shows the relationship between PM₁₀ concentrations, wind direction, and wind speed in Sant Andreu de la Barca. 
+<p>This polarPlot shows the relationship between PM₁₀ concentrations, wind direction, and wind speed in Sant Andreu de la Barca. 
 The warm colors (orange and red) represent higher PM₁₀ levels, while cooler colors (green and blue) indicate lower concentrations. 
 The graph suggests that the highest PM₁₀ concentrations occur mainly with winds coming from the east, southeast, and south directions at relatively low wind speeds. 
 In contrast, stronger winds from the west and northwest are associated with lower pollution levels, probably because they help disperse pollutants more effectively. 
@@ -294,12 +300,35 @@ Overall, the graphic indicates that both wind direction and wind intensity influ
 </p>
 <p>You can see that the pollutionRose and polarPlot graphs are very similar, because both graphs study the relationship between the wind and PM₁₀ pollution of Sant Andreu, but they are not the same. 
   The pollutionRose only focuses on the frequency of PM₁₀ concentrations by wind direction, while the polarPlot goes a step further by combining wind direction, wind speed, and PM₁₀ concentration.</p>
+<u><h3>polarMap</h3></u>
 <img src="polarMap.png"> 
 <p> This map is a representation of the polarPlot in a map, showing how PM₁₀ pollution is distributed around the monitoring station in Sant Andreu de la Barca according to wind direction and intensity. 
 In this photo we can see that the pollution comes from the east, suggesting that some PM₁₀ pollution may be associated with nearby industrial areas, 
-such as CELSA Barcelona, as well as major road infrastructure located near the monitoring station. </p>
+such as CELSA Barcelona, as well as major road infrastructure located near the monitoring station.</p>
 <p>And from the polarMap image we've created a page where you can zoom in on the area and see different locations where the contamination might be coming from.
-Here's a screenshot from the page that we made:<img src="pagina_polarMap.png"> </p>
+Here's a screenshot from the page that we made:<img src="pagina_polarMap.png"></p>
+
+<p>The relationship between PM₁₀ pollution and respiratory health in Sant Andreu de la Barca was analyzed using Relative Risk (RR), Attributable Risk (AR), and Attributable Fraction (AR%).</p>
+<u><h3>Relative Risk (RR)</h3></u>
+<img src="relativerisk.png"> 
+<p>Relative Risk (RR) measures how much more likely a health problem is to occur in a group exposed to a pollutant compared to a group with lower exposure.
+  In this study, the RR value for PM₁₀ is 1.08, which means that people exposed to higher PM₁₀ concentrations may have an 8% higher risk of respiratory problems.
+  An RR greater than 1 suggests a possible increase in risk, while an RR lower than 1 would indicate a protective effect. 
+  However, because the p-value is higher than 0.05, is not statistically significant.</p>
+
+ <u><h3>Attributable Risk (AR)</h3></u>
+ <img src="attributablerisk.png">
+ <p>Attributable Risk (AR) represents the additional number of respiratory cases that could be associated with exposure to PM₁₀. 
+   In this case, the AR value is 0.14 cases per 1000 people, meaning that a very small number of cases may be linked to PM₁₀ exposure.
+   This indicator helps estimate the direct impact of the pollutant on public health.</p>
+
+  <u><h3>Attributable Fraction (AR%)</h3></u>
+  <img src="attributablefraction.png">
+  <p>Attributable Fraction (AR%) indicates the percentage of respiratory cases among the exposed population that could potentially be attributed to PM₁₀ exposure.
+    Here, the AR% is 7.1%, suggesting that around 7% of the cases may be related to PM₁₀ pollution.
+    However, as with RR and AR, the p-value shows that the evidence is not strong enough to confirm a statistically significant relationship.</p>
+
+  
 
       </ul>
   </main>
